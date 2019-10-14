@@ -1,0 +1,22 @@
+body{
+    background-color: #e9ebee;              
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;           
+}
+
+*{
+      
+    transition-duration: 300ms 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+}
