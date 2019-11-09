@@ -12,7 +12,7 @@ function validation () {
  var list = document.querySelectorAll("input");
  list.forEach(function (item) {
   if (item.value.length<5){
-    error = "le champs doivent contenir au moins cinq caracteres";
+    error = "les champs doivent contenir au moins cinq caracteres";
   }
 
 
