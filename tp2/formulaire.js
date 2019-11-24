@@ -1,4 +1,5 @@
 function validation () {
+  this.event.preventDefault();
   var nom = document.getElementById('Nom');
   var prenom = document.getElementById('prénom');
   var date = document.getElementById('date');
@@ -8,21 +9,26 @@ function validation () {
   var resultText = document.getElementById("resultat");
    var error = "";
    var resultat= "";
- var list = document.querySelectorAll('input');
+ var list = document.querySelectorAll("input");
  list.forEach(function (item) {
   if (item.value.length<5){
-    error ="les champ sont vide, ";
+    error = "les champs doivent contenir au moins cinq caracteres";
   }
+
+
+
 
 });
 
+
 if (error ==="") {
-  resultat = "correct"
+  resultat = "bienvenue" + " "+nom.value + " " +prenom.value;
   resultText.innerText=resultat;
 }else {
   errorText.innerText=error;
+
+
+
+
 }
-
-
-
 }
